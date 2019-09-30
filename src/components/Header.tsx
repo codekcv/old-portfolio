@@ -6,9 +6,10 @@ interface Props {}
 export const Header: React.FC<Props> = () => {
   return (
     <HeaderStyled>
+      <h2 className="portfolio">{`<Portfolio />`}</h2>
       <h1>{`Hey, I'm Christian ;)`}</h1>
       <h2>
-        A full stack developer specializing in reactjjs and its environment.
+        {`A Full Stack Developer specializing in ReactJS and its environment.`}
       </h2>
       <h3>ReactJS | Redux | GraphQL | Apollo | GatsbyJS | TypeScript</h3>
     </HeaderStyled>
@@ -18,8 +19,14 @@ export const Header: React.FC<Props> = () => {
 const HeaderStyled = styled.header`
   margin-top: 50px;
 
+  text-align: center;
+
+  .portfolio {
+    color: aquamarine;
+  }
+
   h1 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 125px;
   }
 `
