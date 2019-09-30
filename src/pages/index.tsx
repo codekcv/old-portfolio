@@ -20,7 +20,7 @@ const index: React.FC = () => {
 }
 
 const Container = styled.main`
-  width: 1200px;
+  max-width: 1200px;
   border: 2px pink solid;
   margin: 0 auto;
 `
