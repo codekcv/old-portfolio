@@ -7,8 +7,8 @@ interface Props {}
 export const Header: React.FC<Props> = () => {
   return (
     <HeaderStyled>
-      {/* <h2 className="portfolio">{`<Portfolio />`}</h2>
-      <h5>Under Construction</h5> */}
+      <h2 className="portfolio">{`<Portfolio />`}</h2>
+      <h5>Under Construction</h5>
       <h1>{`hi, i'm ian ;)`}</h1>
       <h2>A Full Stack Developer specializing in:</h2>
       <h3>
@@ -79,16 +79,17 @@ const HeaderStyled = styled.header`
   .bracket {
     color: gold;
   }
+
   .portfolio {
-    color: aquamarine;
+    color: lightseagreen;
   }
 
   .reactjs {
-    color: deepskyblue;
+    color: DodgerBlue /*deepskyblue*/;
   }
 
   .nodejs {
-    color: mediumspringgreen;
+    color: limegreen;
   }
 
   .graphql {
